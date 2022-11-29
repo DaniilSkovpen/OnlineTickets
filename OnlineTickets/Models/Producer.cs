@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OnlineTickets.Models
 {
-    public class Produser
+    public class Producer
     {
         [Key]
         public int ActorsId { get; set; }
@@ -14,5 +14,8 @@ namespace OnlineTickets.Models
         public string ProfilePicturesURL { get; set; }
         public string FullName { get; set; }
         public string Bios { get; set; }
+
+        //Relationships
+        public List<Movie> Movies { get; set; }
     }
 }

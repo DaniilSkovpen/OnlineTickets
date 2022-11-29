@@ -14,5 +14,8 @@ namespace OnlineTickets.Models
         public string ProfilePicturesURL { get; set; }
         public string FullName { get; set; }
         public string Bios { get; set; }
+
+        //Relationships
+        public List<Actor_Movie> Actors_Movies { get; set; }
     }
 }
