@@ -11,6 +11,8 @@ namespace OnlineTickets.Data
         Comedy,
         Drama,
         Documentary,
-        Western
+        Western,
+        Cartoon,
+        Horror,
     }
 }
