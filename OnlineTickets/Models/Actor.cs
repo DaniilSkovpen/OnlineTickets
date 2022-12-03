@@ -11,8 +11,11 @@ namespace OnlineTickets.Models
         [Key]
         public int ActorsId { get; set; }
 
+        [Display(Name = "Profile Picture URL")]
         public string ProfilePicturesURL { get; set; }
+        [Display(Name = "Full Name")]
         public string FullName { get; set; }
+        [Display(Name = "Bios")]
         public string Bios { get; set; }
 
         //Relationships
