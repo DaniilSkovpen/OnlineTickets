@@ -8,17 +8,17 @@ using System.Threading.Tasks;
 
 namespace OnlineTickets.Controllers
 {
-    public class ProducersController : Controller
+    public class CinemasController : Controller
     {
         private readonly AppDBContext _context;
 
-        public ProducersController(AppDBContext context)
+        public CinemasController(AppDBContext context)
         {
             _context = context;
         }
         public async Task<IActionResult> Index()
         {
-            var allProducers = await _context.Producers.ToListAsync();
+            var allCinemas = await _context.Cinemas.ToListAsync();
             return View();
         }
     }
