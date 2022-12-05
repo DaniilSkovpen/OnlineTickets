@@ -8,7 +8,7 @@ namespace OnlineTickets.Data.Services
 {
     public interface IActorsService
     {
-        IEnumerable<Actor> GetAll();
+        Task<IEnumerable<Actor>> GetAll();
         Actor GetBy(int id);
         void Add(Actor actor);
         void Update(int id, Actor newActor);
