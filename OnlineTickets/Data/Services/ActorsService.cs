@@ -28,18 +28,6 @@ namespace OnlineTickets.Data.Services
             await _context.SaveChangesAsync();
         }
 
-        public async Task<IEnumerable<Actor>> GetAllAsync()
-        {
-            var resoult = await _context.Actors.ToListAsync();
-            return resoult;
-        }
-
-        public async Task<Actor> GetByIdAsync(int id)
-        {
-            var resoult = await _context.Actors.FirstOrDefaultAsync(n => n.ActorsId == id);
-            return resoult;
-        }
-
         public async Task<Actor> UpdateAsync(int id, Actor newActor)
         {
             _context.Update(newActor);
