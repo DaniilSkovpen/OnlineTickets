@@ -38,9 +38,11 @@ namespace OnlineTickets.Data.Services
             return resoult;
         }
 
-        public void Update(int id, Actor newActor)
+        public async Task<Actor> UpdateAsync(int id, Actor newActor)
         {
-            throw new NotImplementedException();
+            _context.Update(newActor);
+            await _context.SaveChangesAsync();
+            return newActor;
         }
     }
 }
