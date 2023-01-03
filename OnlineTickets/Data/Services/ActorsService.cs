@@ -18,7 +18,6 @@ namespace OnlineTickets.Data.Services
         {
             _context.Actors.Add(actor);
             await _context.SaveChangesAsync();
-
         }
 
         public async Task DeleteAsync(int id)
