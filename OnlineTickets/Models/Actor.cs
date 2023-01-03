@@ -12,10 +12,16 @@ namespace OnlineTickets.Models
         public int ActorsId { get; set; }
 
         [Display(Name = "Profile Picture")]
+        [Required(ErrorMessage = "Profile Picture is required")]
         public string ProfilePicturesURL { get; set; }
+
         [Display(Name = "Full Name")]
+        [Required(ErrorMessage = "Full Name is required")]
+        [StringLength(50, MinimumLength=3, ErrorMessage = "Full Name must be between 3 and 50 chars")]
         public string FullName { get; set; }
+
         [Display(Name = "Bios")]
+        [Required(ErrorMessage = "Biography is required")]
         public string Bios { get; set; }
 
         //Relationships

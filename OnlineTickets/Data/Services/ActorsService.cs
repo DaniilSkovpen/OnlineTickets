@@ -2,7 +2,6 @@
 using OnlineTickets.Models;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace OnlineTickets.Data.Services
@@ -17,7 +16,9 @@ namespace OnlineTickets.Data.Services
 
         public void Add(Actor actor)
         {
-            throw new NotImplementedException();
+            _context.Actors.Add(actor);
+            _context.SaveChanges();
+
         }
 
         public void Delete(int id)

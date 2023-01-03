@@ -65,31 +65,43 @@ namespace OnlineTickets.Data
                         {
                             FullName = "Actor 1",
                             ProfilePicturesURL = "http://dotnethow.net/images/actors/actor-1.jpeg",
-                            Bios = "This is description of the first cinema"
+                            Bios = "This is description of the first Actor"
                         },
                         new Actor()
                         {
                             FullName = "Actor 2",
                             ProfilePicturesURL = "http://dotnethow.net/images/actors/actor-2.jpeg",
-                            Bios = "This is description of the first cinema"
+                            Bios = "This is description of the secont Actor"
                         },
                         new Actor()
                         {
                             FullName = "Actor 3",
                             ProfilePicturesURL = "http://dotnethow.net/images/actors/actor-3.jpeg",
-                            Bios = "This is description of the first cinema"
+                            Bios = "This is description of the third Actor"
                         },
                         new Actor()
                         {
                             FullName = "Actor 4",
                             ProfilePicturesURL = "http://dotnethow.net/images/actors/actor-4.jpeg",
-                            Bios = "This is description of the first cinema"
+                            Bios = "This is description of the forth Actor"
                         },
                         new Actor()
                         {
                             FullName = "Actor 5",
                             ProfilePicturesURL = "http://dotnethow.net/images/actors/actor-5.jpeg",
-                            Bios = "This is description of the first cinema"
+                            Bios = "This is description of the fifth Actor"
+                        },
+                         new Actor()
+                        {
+                            FullName = "Actor 6",
+                            ProfilePicturesURL = "http://dotnethow.net/images/actors/actor-4.jpeg",
+                            Bios = "This is description of the fifth Actor"
+                        },
+                          new Actor()
+                        {
+                            FullName = "Actor 7",
+                            ProfilePicturesURL = "http://dotnethow.net/images/actors/actor-3.jpeg",
+                            Bios = "This is description of the fifth Actor"
                         },
                     });
                     context.SaveChanges();
@@ -103,31 +115,31 @@ namespace OnlineTickets.Data
                         {
                         FullName = "Producer 1",
                         ProfilePicturesURL = "http://dotnethow.net/images/producers/producer-1.jpeg",
-                        Bios = "This is description of the first cinema"
+                        Bios = "This is description of the first Producer"
                         },
                         new Producer()
                             {
                             FullName = "Producer 2",
                             ProfilePicturesURL = "http://dotnethow.net/images/producers/producer-2.jpeg",
-                            Bios = "This is description of the first cinema"
+                            Bios = "This is description of the second Producer"
                         },
                           new Producer()
                         {
                             FullName = "Producer 3",
                             ProfilePicturesURL = "http://dotnethow.net/images/producers/producer-3.jpeg",
-                            Bios = "This is description of the first cinema"
+                            Bios = "This is description of the third Producer"
                         },
                         new Producer()
                         {
                             FullName = "Producer 4",
                             ProfilePicturesURL = "http://dotnethow.net/images/producers/producer-4.jpeg",
-                            Bios = "This is description of the first cinema"
+                            Bios = "This is description of the forth Producer"
                         },
                         new Producer()
                         {
                             FullName = "Producer 5",
                             ProfilePicturesURL = "http://dotnethow.net/images/producers/producer-5.jpeg",
-                            Bios = "This is description of the first cinema"
+                            Bios = "This is description of the fifth Producer"
                         },
                 });
                     context.SaveChanges();
@@ -141,7 +153,7 @@ namespace OnlineTickets.Data
                         {
                             Name = "Movie 1",
                             ImgURL = "http://dotnethow.net/images/movies/movie-1.jpeg",
-                            Description = "This is description of the first cinema",
+                            Description = "This is description of the first Movie",
                             Price = 34,
                             StartDate = DateTime.Now.AddDays(-10),
                             EndDate= DateTime.Now.AddDays(-2),
@@ -153,7 +165,7 @@ namespace OnlineTickets.Data
                             {
                             Name = "Movie 2",
                             ImgURL = "http://dotnethow.net/images/movies/movie-2.jpeg",
-                            Description = "This is description of the first cinema",
+                            Description = "This is description of the first Movie",
                             Price = 38.40,
                             StartDate = DateTime.Now.AddDays(-5),
                             EndDate = DateTime.Now.AddDays(+3),
@@ -165,7 +177,7 @@ namespace OnlineTickets.Data
                         {
                             Name = "Movie 3",
                             ImgURL = "http://dotnethow.net/images/movies/movie-3.jpeg",
-                            Description = "This is description of the first cinema",
+                            Description = "This is description of the first Movie",
                             Price = 15.70,
                             StartDate = DateTime.Now.AddDays(-6),
                             EndDate = DateTime.Now.AddDays(+1),
@@ -177,7 +189,7 @@ namespace OnlineTickets.Data
                         {
                             Name = "Movie 4",
                             ImgURL = "http://dotnethow.net/images/movies/movie-4.jpeg",
-                            Description = "This is description of the first cinema",
+                            Description = "This is description of the first Movie",
                             Price = 43.20,
                             StartDate = DateTime.Now.AddDays(+4),
                             EndDate = DateTime.Now.AddDays(+11),
@@ -189,7 +201,7 @@ namespace OnlineTickets.Data
                         {
                             Name = "Movie 5",
                             ImgURL = "http://dotnethow.net/images/movies/movie-5.jpeg",
-                            Description = "This is description of the first cinema",
+                            Description = "This is description of the first Movie",
                             Price = 32.50,
                             StartDate = DateTime.Now.AddDays(-8),
                             EndDate = DateTime.Now.AddDays(-15),
