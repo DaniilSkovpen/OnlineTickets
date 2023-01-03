@@ -21,9 +21,11 @@ namespace OnlineTickets.Data.Services
 
         }
 
-        public void Delete(int id)
+        public async Task DeleteAsync(int id)
         {
-            throw new NotImplementedException();
+            var resoult = await _context.Actors.FirstOrDefaultAsync(n => n.ActorsId == id);
+            _context.Actors.Remove(resoult);
+            await _context.SaveChangesAsync();
         }
 
         public async Task<IEnumerable<Actor>> GetAllAsync()
